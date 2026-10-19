@@ -2,16 +2,16 @@
   "domain": "glow_history",
   "name": "Glow History Import",
   "codeowners": [
-    "@YOUR-USERNAME"
+    "@binarboyz"
   ],
   "config_flow": true,
   "dependencies": [
     "recorder"
   ],
-  "documentation": "https://github.com/YOUR-USERNAME/ha-glow-history",
+  "documentation": "https://github.com/binarboyz/ha-glow-history",
   "integration_type": "service",
   "iot_class": "cloud_polling",
-  "issue_tracker": "https://github.com/YOUR-USERNAME/ha-glow-history/issues",
+  "issue_tracker": "https://github.com/binarboyz/ha-glow-history/issues",
   "requirements": [],
   "version": "1.0.1"
 }
