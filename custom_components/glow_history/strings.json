@@ -1,0 +1,57 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Bright (Hildebrand Glow) login",
+        "description": "Enter the email and password you use in the Bright app.",
+        "data": {
+          "username": "Email",
+          "password": "Password"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Re-enter your Bright password",
+        "description": "The Bright login for {username} stopped working.",
+        "data": {
+          "password": "Password"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Bright rejected that email or password.",
+      "cannot_connect": "Could not reach the Glowmarkt service. Try again shortly."
+    },
+    "abort": {
+      "already_configured": "This Bright account is already set up.",
+      "reauth_successful": "Login updated."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Tariff and import settings",
+        "description": "Rates are in pence, as shown on your bill. Changing them reprices only the most recent days (the look-back window).",
+        "data": {
+          "electricity_unit_rate": "Electricity unit rate (p/kWh)",
+          "electricity_standing_charge": "Electricity standing charge (p/day)",
+          "gas_unit_rate": "Gas unit rate (p/kWh)",
+          "gas_standing_charge": "Gas standing charge (p/day)",
+          "include_standing_charge": "Include standing charges in cost",
+          "scan_interval_hours": "Check for new data every (hours)",
+          "lookback_days": "Re-check the last (days)",
+          "backfill_days": "History to import on first run (days)"
+        },
+        "data_description": {
+          "lookback_days": "Late or corrected readings within this many days are picked up on each run.",
+          "backfill_days": "Only used the very first time. Bright keeps about 13 months."
+        }
+      }
+    }
+  },
+  "services": {
+    "import_now": {
+      "name": "Import now",
+      "description": "Fetch the latest readings from Glowmarkt immediately instead of waiting for the next scheduled run."
+    }
+  }
+}
