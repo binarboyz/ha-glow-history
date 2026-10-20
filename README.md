@@ -30,7 +30,7 @@ This integration works differently. It re-reads the last few days every run and 
 
 ### HACS (recommended)
 1. HACS → three-dot menu → **Custom repositories**
-2. Add `https://github.com/binaryboyz/ha-glow-history` with category **Integration**
+2. Add `https://github.com/binarboyz/ha-glow-history` with category **Integration**
 3. Search for **Glow History Import**, download it, and restart Home Assistant
 
 ### Manual
